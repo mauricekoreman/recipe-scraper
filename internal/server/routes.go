@@ -2,6 +2,7 @@ package server
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 )
@@ -10,7 +11,7 @@ func (s *Server) RegisterRoutes() http.Handler {
 	mux := http.NewServeMux()
 
 	// Register routes
-	mux.HandleFunc("/", s.helloWorldHanlder)
+	mux.HandleFunc("/", s.recipeUrlHandler)
 
 	// Wrap mux with CORS middleware
 	return s.corsMiddleware(mux)
@@ -47,4 +48,34 @@ func (s *Server) helloWorldHanlder(w http.ResponseWriter, r *http.Request) {
 	if _, err := w.Write(jsonResp); err != nil {
 		log.Printf("Failed to write response: %v", err)
 	}
+}
+
+func (s *Server) recipeUrlHandler(w http.ResponseWriter, r *http.Request) {
+	type RecipeRequest struct {
+		RecipeURL string `json:"recipeURL"`
+	}
+
+	decoder := json.NewDecoder(r.Body)
+	req := RecipeRequest{}
+	err := decoder.Decode(&req)
+	if err != nil {
+		respondWithError(w, http.StatusBadRequest, "Invalid JSON", err)
+		return
+	}
+
+	res, err := http.Get(req.RecipeURL)
+	if err != nil {
+		respondWithError(w, http.StatusInternalServerError, "something went wrong with fetching the recipe URL you provided", err)
+		return
+	}
+
+	fmt.Println("Fetched recipe...")
+
+	_, err = findJSONLD(res.Body)
+	if err != nil {
+		respondWithError(w, http.StatusInternalServerError, "something went wrong parsing the data", err)
+		return
+	}
+
+	fmt.Println("Done")
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mock Product Page</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Super Awesome Gadget",
+        "description": "This is a truly super awesome gadget for all your needs.",
+        "sku": "GADGET-001",
+        "image": "https://example.com/gadget.jpg",
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "199.99",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "89"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://example.com/"
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <h1>Super Awesome Gadget</h1>
+    <p>Details about the gadget...</p>
+</body>
+
+</html>
