@@ -1,0 +1,415 @@
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "Article",
+			"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#article",
+			"isPartOf": {
+				"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/"
+			},
+			"author": {
+				"name": "Nisha",
+				"@id": "https://rainbowplantlife.com/#/schema/person/7943c9c8c6cf9cec898fd08ad2629b4d"
+			},
+			"headline": "Red Lentil Curry",
+			"datePublished": "2020-09-25T11:30:00+00:00",
+			"dateModified": "2023-07-27T19:39:45+00:00",
+			"wordCount": 2547,
+			"commentCount": 3983,
+			"publisher": { "@id": "https://rainbowplantlife.com/#organization" },
+			"image": {
+				"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#primaryimage"
+			},
+			"thumbnailUrl": "https://rainbowplantlife.com/wp-content/uploads/2020/09/redlentilcurryflatstraight-2020update281of129-scaled.jpg",
+			"keywords": [
+				"Indian cuisine",
+				"Indian",
+				"Vegan red lentil curry",
+				"gluten-free",
+				"soy-free"
+			],
+			"articleSection": ["Recipes", "Dinner", "Video", "Featured Favorites"],
+			"inLanguage": "en-US",
+			"potentialAction": [
+				{
+					"@type": "CommentAction",
+					"name": "Comment",
+					"target": [
+						"https://rainbowplantlife.com/vegan-red-lentil-curry/#respond"
+					]
+				}
+			]
+		},
+		{
+			"@type": ["WebPage", "FAQPage"],
+			"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/",
+			"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/",
+			"name": "Red Lentil Curry - Rainbow Plant Life",
+			"isPartOf": { "@id": "https://rainbowplantlife.com/#website" },
+			"primaryImageOfPage": {
+				"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#primaryimage"
+			},
+			"image": {
+				"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#primaryimage"
+			},
+			"thumbnailUrl": "https://rainbowplantlife.com/wp-content/uploads/2020/09/redlentilcurryflatstraight-2020update281of129-scaled.jpg",
+			"datePublished": "2020-09-25T11:30:00+00:00",
+			"dateModified": "2023-07-27T19:39:45+00:00",
+			"description": "This one-pot Red Lentil Curry is a simple yet gourmet pantry recipe and bonafide fan favorite. Creamy, indulgent, and ready in 45 minutes.",
+			"breadcrumb": {
+				"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#breadcrumb"
+			},
+			"mainEntity": [
+				{
+					"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976359196"
+				},
+				{
+					"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976396139"
+				},
+				{
+					"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976396839"
+				},
+				{
+					"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976526780"
+				}
+			],
+			"inLanguage": "en-US",
+			"potentialAction": [
+				{
+					"@type": "ReadAction",
+					"target": ["https://rainbowplantlife.com/vegan-red-lentil-curry/"]
+				}
+			]
+		},
+		{
+			"@type": "ImageObject",
+			"inLanguage": "en-US",
+			"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#primaryimage",
+			"url": "https://rainbowplantlife.com/wp-content/uploads/2020/09/redlentilcurryflatstraight-2020update281of129-scaled.jpg",
+			"contentUrl": "https://rainbowplantlife.com/wp-content/uploads/2020/09/redlentilcurryflatstraight-2020update281of129-scaled.jpg",
+			"width": 1200,
+			"height": 1500,
+			"caption": "overhead shot of red lentil curry next to blue napkin"
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Recipes",
+					"item": "https://rainbowplantlife.com/category/recipes/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Dinner",
+					"item": "https://rainbowplantlife.com/category/recipes/dinner/"
+				},
+				{ "@type": "ListItem", "position": 3, "name": "Red Lentil Curry" }
+			]
+		},
+		{
+			"@type": "WebSite",
+			"@id": "https://rainbowplantlife.com/#website",
+			"url": "https://rainbowplantlife.com/",
+			"name": "Rainbow Plant Life",
+			"description": "Master vegan cooking at home.",
+			"publisher": { "@id": "https://rainbowplantlife.com/#organization" },
+			"potentialAction": [
+				{
+					"@type": "SearchAction",
+					"target": {
+						"@type": "EntryPoint",
+						"urlTemplate": "https://rainbowplantlife.com/?s={search_term_string}"
+					},
+					"query-input": {
+						"@type": "PropertyValueSpecification",
+						"valueRequired": true,
+						"valueName": "search_term_string"
+					}
+				}
+			],
+			"inLanguage": "en-US"
+		},
+		{
+			"@type": "Organization",
+			"@id": "https://rainbowplantlife.com/#organization",
+			"name": "Rainbow Plant Life",
+			"url": "https://rainbowplantlife.com/",
+			"logo": {
+				"@type": "ImageObject",
+				"inLanguage": "en-US",
+				"@id": "https://rainbowplantlife.com/#/schema/logo/image/",
+				"url": "https://rainbowplantlife.com/wp-content/uploads/2021/08/RPL-Logo-SQUARE.png",
+				"contentUrl": "https://rainbowplantlife.com/wp-content/uploads/2021/08/RPL-Logo-SQUARE.png",
+				"width": 453,
+				"height": 453,
+				"caption": "Rainbow Plant Life"
+			},
+			"image": { "@id": "https://rainbowplantlife.com/#/schema/logo/image/" },
+			"sameAs": [
+				"https://www.facebook.com/rainbowplantlife",
+				"https://www.instagram.com/rainbowplantlife/",
+				"https://pinterest.com/rainbowplantlife/",
+				"https://www.youtube.com/channel/UCDbZvuDA_tZ6XP5wKKFuemQ"
+			]
+		},
+		{
+			"@type": "Person",
+			"@id": "https://rainbowplantlife.com/#/schema/person/7943c9c8c6cf9cec898fd08ad2629b4d",
+			"name": "Nisha",
+			"image": {
+				"@type": "ImageObject",
+				"inLanguage": "en-US",
+				"@id": "https://rainbowplantlife.com/#/schema/person/image/",
+				"url": "https://secure.gravatar.com/avatar/d8da3061e552a5f9f06550473846d6956b8804d85b2bcec84006babc4a85262e?s=96&d=mm&r=g",
+				"contentUrl": "https://secure.gravatar.com/avatar/d8da3061e552a5f9f06550473846d6956b8804d85b2bcec84006babc4a85262e?s=96&d=mm&r=g",
+				"caption": "Nisha"
+			},
+			"sameAs": [
+				"https://rainbowplantlife.com/about/",
+				"https://x.com/rainbowplantlife@gmail.com"
+			],
+			"url": "https://rainbowplantlife.com/author/rainbowplantlife/"
+		},
+		{
+			"@type": "Question",
+			"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976359196",
+			"position": 1,
+			"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976359196",
+			"name": "Can you make red lentil curry in the Instant Pot?",
+			"answerCount": 1,
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes! I have a recipe for how to make this recipe in the Instant Pot in my cookbook, <a href=\"https://rainbowplantlife.com/cookbook/\">The Vegan Instant Pot Cookbook</a>. The cookbook has 90 more nutritious (and colorful!) recipes you can make easily with the magic of an Instant Pot pressure cooker. It’s currently rated at 4.7 stars with over 4300 reviews on <a href=\"https://www.amazon.com/gp/product/B07L2FM9FL?tag=randohouseinc36347-20\" target=\"_blank\" rel=\"noreferrer noopener\">Amazon</a>. Check it out!",
+				"inLanguage": "en-US"
+			},
+			"inLanguage": "en-US"
+		},
+		{
+			"@type": "Question",
+			"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976396139",
+			"position": 2,
+			"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976396139",
+			"name": "Is red lentil curry healthy?",
+			"answerCount": 1,
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "The whole foods that make up the ingredients list make this vegan curry a superbly wholesome meal. You’ll never know it, though, because of the dangerously delicious and indulgent flavors. <br/><br/>Red lentils pack this dish full of plant-based protein (about <a href=\"https://www.hsph.harvard.edu/nutritionsource/food-features/lentils/\" target=\"_blank\" rel=\"noreferrer noopener\">18 grams per 1 cup</a>), <a href=\"https://www.healthline.com/nutrition/top-10-evidence-based-health-benefits-of-turmeric\" target=\"_blank\" rel=\"noreferrer noopener\">iron, fiber, potassium</a>, and many more vitamins and minerals. Turmeric is also a nutritional superstar with <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5664031/\" target=\"_blank\" rel=\"noreferrer noopener\">anti-inflammatory and anti-bacterial properties</a>. Its main compound, <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5664031/\" target=\"_blank\" rel=\"noreferrer noopener\">curcumin</a>, not only blocks damage-causing free radicals in the body but also stimulates the body’s antioxidant mechanisms.",
+				"inLanguage": "en-US"
+			},
+			"inLanguage": "en-US"
+		},
+		{
+			"@type": "Question",
+			"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976396839",
+			"position": 3,
+			"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976396839",
+			"name": "What should I serve with this?",
+			"answerCount": 1,
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "The best and easiest way to serve red lentil curry is with a side of white basmati rice, although cooked brown rice or a whole grain like farro or quinoa would be nice as well. A batch of <a href=\"https://rainbowplantlife.com/vegan-naan/\">Homemade Vegan Naan</a> is perfect for scooping up the soft lentils and savory gravy, but if you don’t have the time, store-bought pita or vegan naan works fine too. Garnish every bowl with cilantro or fresh mint for even more freshness, then dig in.",
+				"inLanguage": "en-US"
+			},
+			"inLanguage": "en-US"
+		},
+		{
+			"@type": "Question",
+			"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976526780",
+			"position": 4,
+			"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#faq-question-1689976526780",
+			"name": "How do I store this lentil curry? Can I freeze it?",
+			"answerCount": 1,
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "To maintain freshness and the layers of flavors, store the leftover curry in an airtight container in the fridge. It should last for up to 3 or 4 days. The curry freezes well, too.",
+				"inLanguage": "en-US"
+			},
+			"inLanguage": "en-US"
+		},
+		{
+			"@type": "Recipe",
+			"name": "Red Lentil Curry",
+			"author": {
+				"@id": "https://rainbowplantlife.com/#/schema/person/7943c9c8c6cf9cec898fd08ad2629b4d"
+			},
+			"description": "This luxurious, fan favorite Red Lentil Curry will get you truly excited about lentils! It’s an ultra-creamy and gourmet Indian-inspired meal made in one pot with pantry staples. Whip it up on a weeknight in 45 minutes!",
+			"datePublished": "2020-09-25T11:30:00+00:00",
+			"image": [
+				"https://rainbowplantlife.com/wp-content/uploads/2020/11/red2Blentil2Bcurry2Bangled2B-2B20202Bupdated2B2812Bof2B12928129.jpg",
+				"https://rainbowplantlife.com/wp-content/uploads/2020/11/red2Blentil2Bcurry2Bangled2B-2B20202Bupdated2B2812Bof2B12928129-500x500.jpg",
+				"https://rainbowplantlife.com/wp-content/uploads/2020/11/red2Blentil2Bcurry2Bangled2B-2B20202Bupdated2B2812Bof2B12928129-500x375.jpg",
+				"https://rainbowplantlife.com/wp-content/uploads/2020/11/red2Blentil2Bcurry2Bangled2B-2B20202Bupdated2B2812Bof2B12928129-480x270.jpg"
+			],
+			"video": {
+				"name": "If I could only cook one dish for a vegan skeptic…",
+				"description": "👩🏽‍🍳 MY NEW COOKBOOK: Big Vegan Flavor is now available—and it's a New York Times Bestseller! 🎉 Learn how to master vegan cooking in this comprehensive 600-page \"vegan flavor bible\" and enjoy 150 globally inspired, flavor-forward recipes! Grab your copy here: https://rainbowplantlife.com/bigveganflavor/\n----------------------------------------------------------------------------------------------------------\nRED LENTIL CURRY RECIPE: https://www.rainbowplantlife.com/blog/vegan-red-lentil-curry\n----------------------------------------------------------------------------------------------------------\n*IN THIS VIDEO*\nMicroplane: https://amzn.to/3mSb3Lu\nMy favorite spices: https://www.burlapandbarrel.com/collections/all\n\n*MY KITCHEN ESSENTIALS* \n\nInstant Pot 6 quart: https://amzn.to/3aQY1aQ\nFood Processor: https://amzn.to/38L8Aub\nNonstick skillet: https://amzn.to/3dIa5fj\nMy Favorite Knife: http://bit.ly/favorite-knife\nLarge Cutting Board: https://amzn.to/2RYa0L8\nCast iron skillet: https://amzn.to/2DXvuol\nVitamix blender: https://amzn.to/36xtZFN\nVitamix 64-ounce container: https://amzn.to/3cp5SNj\nLinen apron: https://etsy.me/36u2qB0\n\n*Key Moments*\n0:00 Introduction\n0:25 Why you should try red lentil curry \n1:15 Prepping ingredients\n3:30 Cooking red lentil curry\n5:43 Adding finishing touches\n5:53 Serving suggestions for red lentil curry",
+				"uploadDate": "2020-09-26T13:30:00+00:00",
+				"duration": "PT6M25S",
+				"thumbnailUrl": "https://i.ytimg.com/vi/BHRyfEbhFFU/hqdefault.jpg",
+				"embedUrl": "https://www.youtube.com/embed/BHRyfEbhFFU?feature=oembed",
+				"contentUrl": "https://www.youtube.com/watch?v=BHRyfEbhFFU",
+				"@type": "VideoObject"
+			},
+			"recipeYield": ["4"],
+			"prepTime": "PT10M",
+			"cookTime": "PT35M",
+			"totalTime": "PT45M",
+			"recipeIngredient": [
+				"1 tablespoon refined or virgin coconut oil, (or a neutral-flavored oil)",
+				"4 cloves garlic, (minced)",
+				"2 inch piece of fresh ginger, (peeled and minced or grated)",
+				"1 tablespoon minced fresh turmeric, (or 1 teaspoon ground turmeric)",
+				"1-2  serrano peppers, diced ((see recipe note below on spice level) )",
+				"1 teaspoon ground cumin",
+				"1/2 teaspoon ground coriander",
+				"1/2 teaspoon Indian red chili powder ((if you only have regular chili powder, which is a blend, use 1 teaspoon))",
+				"2 teaspoons curry powder",
+				"1 teaspoon garam masala",
+				"Kosher salt or sea salt to taste ((I use about 1 tsp kosher salt, and add more at the end))",
+				"Freshly cracked black pepper to taste",
+				"1 cup (180-190g) red lentils, (or split red lentils (the split variety will cook a bit quicker))",
+				"2 cups (480 mL) low-sodium vegetable broth",
+				"1  (14-ounce / 400g) can crushed tomatoes ((or half of a 28-ounce can))",
+				"1  (13.5-ounce/400 mL) can full-fat coconut milk",
+				"3 tablespoons unsweetened creamy almond butter",
+				"1/2  a small lemon, (juiced)",
+				"1/2 cup (~8g) fresh cilantro, (roughly chopped)",
+				"For serving: Basmati or Jasmine rice and Indian flatbread such as roti, paratha, or naan"
+			],
+			"recipeInstructions": [
+				{
+					"@type": "HowToStep",
+					"text": "Rinse the lentils in cold water until the water runs clear.",
+					"name": "Rinse the lentils in cold water until the water runs clear.",
+					"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#wprm-recipe-5540-step-0-0"
+				},
+				{
+					"@type": "HowToStep",
+					"text": "Heat a large, deep skillet or large saucepan over medium-high heat and add the coconut oil. Once the oil is shimmering, add the garlic, ginger, fresh turmeric (if using), and Serrano pepper and cook for 2 minutes, stirring frequently to prevent garlic from burning.",
+					"name": "Heat a large, deep skillet or large saucepan over medium-high heat and add the coconut oil. Once the oil is shimmering, add the garlic, ginger, fresh turmeric (if using), and Serrano pepper and cook for 2 minutes, stirring frequently to prevent garlic from burning.",
+					"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#wprm-recipe-5540-step-0-1"
+				},
+				{
+					"@type": "HowToStep",
+					"text": "Add the cumin, coriander, chili powder, curry powder, garam masala, salt, and black pepper to taste, and cook for 30 to 60 seconds until fragrant, tossing frequently to prevent burning. If using ground turmeric instead of fresh turmeric, add the ground turmeric now, along the the rest of the spices.",
+					"name": "Add the cumin, coriander, chili powder, curry powder, garam masala, salt, and black pepper to taste, and cook for 30 to 60 seconds until fragrant, tossing frequently to prevent burning. If using ground turmeric instead of fresh turmeric, add the ground turmeric now, along the the rest of the spices.",
+					"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#wprm-recipe-5540-step-0-2"
+				},
+				{
+					"@type": "HowToStep",
+					"text": "Pour in the vegetable broth, and use a wooden spoon or spatula to scrape up any browned bits on the bottom of the pot. Add in the lentils and the crushed tomatoes and mix well. Reduce the heat to low and cover the pan with a lid. Simmer for 20 to 25 minutes, or until the lentils are cooked through and have mostly softened. If you find that the lentils are not quite soft after 25 minutes, add a few spoons more of broth or water and cook for another 5 minutes.",
+					"name": "Pour in the vegetable broth, and use a wooden spoon or spatula to scrape up any browned bits on the bottom of the pot. Add in the lentils and the crushed tomatoes and mix well. Reduce the heat to low and cover the pan with a lid. Simmer for 20 to 25 minutes, or until the lentils are cooked through and have mostly softened. If you find that the lentils are not quite soft after 25 minutes, add a few spoons more of broth or water and cook for another 5 minutes.",
+					"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#wprm-recipe-5540-step-0-3"
+				},
+				{
+					"@type": "HowToStep",
+					"text": "Remove the lid and stir in the coconut milk, almond butter, along with salt and pepper to taste Continue cooking on low heat, uncovered for 5 to 8 minutes, until the curry has thickened and is creamy.",
+					"name": "Remove the lid and stir in the coconut milk, almond butter, along with salt and pepper to taste Continue cooking on low heat, uncovered for 5 to 8 minutes, until the curry has thickened and is creamy.",
+					"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#wprm-recipe-5540-step-0-4"
+				},
+				{
+					"@type": "HowToStep",
+					"text": "Finally, stir in the lemon juice and cilantro, and turn off the heat. If you want your lentils to even creamier and more on the puréed side, use an immersion blender to lightly purée the curry.",
+					"name": "Finally, stir in the lemon juice and cilantro, and turn off the heat. If you want your lentils to even creamier and more on the puréed side, use an immersion blender to lightly purée the curry.",
+					"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#wprm-recipe-5540-step-0-5"
+				},
+				{
+					"@type": "HowToStep",
+					"text": "Serve the curry with rice and/or Indian flatbread and garnish with additional cilantro. Store leftovers in the fridge for 3-4 days.",
+					"name": "Serve the curry with rice and/or Indian flatbread and garnish with additional cilantro. Store leftovers in the fridge for 3-4 days.",
+					"url": "https://rainbowplantlife.com/vegan-red-lentil-curry/#wprm-recipe-5540-step-0-6"
+				}
+			],
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.98",
+				"ratingCount": "2492",
+				"reviewCount": "8"
+			},
+			"review": [
+				{
+					"@type": "Review",
+					"reviewRating": { "@type": "Rating", "ratingValue": "5" },
+					"reviewBody": "Absolutely amazing, tastes delicious and also freezes well. The ingredients are cheap and it makes a lot of food!",
+					"author": { "@type": "Person", "name": "Rowan" },
+					"datePublished": "2025-06-05"
+				},
+				{
+					"@type": "Review",
+					"reviewRating": { "@type": "Rating", "ratingValue": "5" },
+					"reviewBody": "This was excellent, the best curry recipe I've tried, and so easy to do. Thank you!",
+					"author": { "@type": "Person", "name": "Patrick" },
+					"datePublished": "2025-06-01"
+				},
+				{
+					"@type": "Review",
+					"reviewRating": { "@type": "Rating", "ratingValue": "5" },
+					"reviewBody": "This is the nicest curry recipe I have tried. I add cauliflower and sweet potato as well. We all love it, thank you.",
+					"author": { "@type": "Person", "name": "Annette" },
+					"datePublished": "2025-05-30"
+				},
+				{
+					"@type": "Review",
+					"reviewRating": { "@type": "Rating", "ratingValue": "5" },
+					"reviewBody": "Yummy!!!!!  The only thing I changed was put some onion in it.  I think I might but more or bigger Serrano pepper also, since the coconut milk and almond butter mellow it a little.  I will definitely be making this dish more often.  All the flavors work really well together.  Even with all the prep, it was super easy to make.",
+					"author": { "@type": "Person", "name": "Rowan" },
+					"datePublished": "2025-05-30"
+				},
+				{
+					"@type": "Review",
+					"reviewRating": { "@type": "Rating", "ratingValue": "5" },
+					"reviewBody": "I would like to sub almond butter with tahini, is it still the same quantity?",
+					"author": { "@type": "Person", "name": "Stella Djuric" },
+					"datePublished": "2025-05-27"
+				},
+				{
+					"@type": "Review",
+					"reviewRating": { "@type": "Rating", "ratingValue": "5" },
+					"reviewBody": "Great taste .will add coconut milk next time!",
+					"author": { "@type": "Person", "name": "Chips" },
+					"datePublished": "2025-05-27"
+				},
+				{
+					"@type": "Review",
+					"reviewRating": { "@type": "Rating", "ratingValue": "5" },
+					"reviewBody": "Bext versatile Recipe. Easy to cook and ingredients go well together. I love it with rice.so yummy.......",
+					"author": { "@type": "Person", "name": "Nikki" },
+					"datePublished": "2025-05-26"
+				},
+				{
+					"@type": "Review",
+					"reviewRating": { "@type": "Rating", "ratingValue": "5" },
+					"reviewBody": "A firm family favorite for a while now, so easy even my 8 year old\r\nmakes it!",
+					"author": { "@type": "Person", "name": "Anna" },
+					"datePublished": "2025-05-26"
+				}
+			],
+			"recipeCategory": ["Dinner"],
+			"recipeCuisine": ["Indian"],
+			"suitableForDiet": ["https://schema.org/VeganDiet"],
+			"keywords": "curry, lentils, spicy",
+			"nutrition": {
+				"@type": "NutritionInformation",
+				"calories": "517 kcal",
+				"carbohydrateContent": "45 g",
+				"proteinContent": "19 g",
+				"fatContent": "32 g",
+				"saturatedFatContent": "22 g",
+				"sodiumContent": "164 mg",
+				"fiberContent": "19 g",
+				"sugarContent": "7 g",
+				"unsaturatedFatContent": "7 g",
+				"servingSize": "1 serving"
+			},
+			"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#recipe",
+			"isPartOf": {
+				"@id": "https://rainbowplantlife.com/vegan-red-lentil-curry/#article"
+			},
+			"mainEntityOfPage": "https://rainbowplantlife.com/vegan-red-lentil-curry/"
+		}
+	]
+}

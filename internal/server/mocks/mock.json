@@ -1,30 +1,4 @@
-package server
-
-import (
-	"fmt"
-	"os"
-	"testing"
-)
-
-// TODO: finish tests
-func TestFindJSONLD(t *testing.T) {
-	file, err := os.Open("mocks/mockdata.html")
-	if err != nil {
-		t.Fatalf("Failed to open mock HTML file: %v", err)
-	}
-	defer file.Close()
-
-	contents, err := findJSONLD(file)
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	fmt.Println(contents)
-}
-
-func TestGetRecipeJSON(t *testing.T) {
-	// place mock json in
-	mockJSON := `{
+{
 	"@context": "https://schema.org",
 	"@graph": [
 		{
@@ -41,6 +15,114 @@ func TestGetRecipeJSON(t *testing.T) {
 				"inLanguage": "nl-NL",
 				"width": "545",
 				"height": "109"
+			}
+		},
+		{
+			"@type": "WebSite",
+			"@id": "https://miljuschka.nl/#website",
+			"url": "https://miljuschka.nl",
+			"name": "miljuschka.nl",
+			"alternateName": "Miljuschka",
+			"publisher": { "@id": "https://miljuschka.nl/#organization" },
+			"inLanguage": "nl-NL"
+		},
+		{
+			"@type": "ImageObject",
+			"@id": "https://miljuschka.nl/wp-content/uploads/2021/02/Bananenbrood-3.jpg",
+			"url": "https://miljuschka.nl/wp-content/uploads/2021/02/Bananenbrood-3.jpg",
+			"width": "1200",
+			"height": "1400",
+			"caption": "Bananenbrood",
+			"inLanguage": "nl-NL"
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://miljuschka.nl/het-beste-bananenbrood-recept-ooit/#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": "1",
+					"item": { "@id": "https://miljuschka.nl", "name": "Home" }
+				},
+				{
+					"@type": "ListItem",
+					"position": "2",
+					"item": {
+						"@id": "https://miljuschka.nl/recepten/",
+						"name": "Recepten"
+					}
+				},
+				{
+					"@type": "ListItem",
+					"position": "3",
+					"item": {
+						"@id": "https://miljuschka.nl/het-beste-bananenbrood-recept-ooit/",
+						"name": "Het beste bananenbrood recept ooit"
+					}
+				}
+			]
+		},
+		{
+			"@type": "WebPage",
+			"@id": "https://miljuschka.nl/het-beste-bananenbrood-recept-ooit/#webpage",
+			"url": "https://miljuschka.nl/het-beste-bananenbrood-recept-ooit/",
+			"name": "Het beste bananenbrood recept ooit | Miljuschka",
+			"datePublished": "2020-03-21T17:24:55+01:00",
+			"dateModified": "2024-11-26T14:23:34+01:00",
+			"isPartOf": { "@id": "https://miljuschka.nl/#website" },
+			"primaryImageOfPage": {
+				"@id": "https://miljuschka.nl/wp-content/uploads/2021/02/Bananenbrood-3.jpg"
+			},
+			"inLanguage": "nl-NL",
+			"breadcrumb": {
+				"@id": "https://miljuschka.nl/het-beste-bananenbrood-recept-ooit/#breadcrumb"
+			}
+		},
+		{
+			"@type": "Person",
+			"@id": "https://miljuschka.nl/author/miljuschka/",
+			"name": "Miljuschka Witzenhausen",
+			"url": "https://miljuschka.nl/author/miljuschka/",
+			"image": {
+				"@type": "ImageObject",
+				"@id": "https://secure.gravatar.com/avatar/16697a9d04421144327e3d8cd454540f20407a9c92bcf2c4df08228b8824b091?s=96&amp;d=mm&amp;r=g",
+				"url": "https://secure.gravatar.com/avatar/16697a9d04421144327e3d8cd454540f20407a9c92bcf2c4df08228b8824b091?s=96&amp;d=mm&amp;r=g",
+				"caption": "Miljuschka Witzenhausen",
+				"inLanguage": "nl-NL"
+			},
+			"sameAs": [
+				"https://miljuschka.nl/",
+				"https://www.facebook.com/miljuschka.witzenhausen",
+				"https://nl.pinterest.com/MiljuschkaW/",
+				"https://instagram.com/miljuschka",
+				"https://nl.wikipedia.org/wiki/Miljuschka_Witzenhausen"
+			],
+			"worksFor": { "@id": "https://miljuschka.nl/#organization" }
+		},
+		{
+			"@type": "BlogPosting",
+			"headline": "Het beste bananenbrood recept ooit | Miljuschka",
+			"keywords": "bananenbrood",
+			"datePublished": "2020-03-21T17:24:55+01:00",
+			"dateModified": "2024-11-26T14:23:34+01:00",
+			"articleSection": "Bakrecepten, Brood recepten, Cake recepten, Kinderrecepten, Recepten, Zoete recepten",
+			"author": {
+				"@id": "https://miljuschka.nl/author/miljuschka/",
+				"name": "Miljuschka Witzenhausen"
+			},
+			"publisher": { "@id": "https://miljuschka.nl/#organization" },
+			"description": "Bananenbrood bakken: zo simpel en toch zo ontzettend lekker. Neem nu dit overheerlijke recept voor bananenbrood. Check het recept!",
+			"name": "Het beste bananenbrood recept ooit | Miljuschka",
+			"@id": "https://miljuschka.nl/het-beste-bananenbrood-recept-ooit/#richSnippet",
+			"isPartOf": {
+				"@id": "https://miljuschka.nl/het-beste-bananenbrood-recept-ooit/#webpage"
+			},
+			"image": {
+				"@id": "https://miljuschka.nl/wp-content/uploads/2021/02/Bananenbrood-3.jpg"
+			},
+			"inLanguage": "nl-NL",
+			"mainEntityOfPage": {
+				"@id": "https://miljuschka.nl/het-beste-bananenbrood-recept-ooit/#webpage"
 			}
 		},
 		{
@@ -202,21 +284,6 @@ func TestGetRecipeJSON(t *testing.T) {
 			"isPartOf": {
 				"@id": "https://miljuschka.nl/het-beste-bananenbrood-recept-ooit/#richSnippet"
 			}
-		},
-		{
-			"@type": "WebSite",
-			"@id": "https://miljuschka.nl/#website",
-			"url": "https://miljuschka.nl",
-			"name": "miljuschka.nl",
-			"alternateName": "Miljuschka",
-			"publisher": { "@id": "https://miljuschka.nl/#organization" },
-			"inLanguage": "nl-NL"
-		}]}`
-
-	foundRecipe, err := getRecipeJSON(mockJSON)
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	fmt.Println(foundRecipe)
+		}
+	]
 }

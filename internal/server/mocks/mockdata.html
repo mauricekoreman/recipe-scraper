@@ -44,6 +44,19 @@
 <body>
     <h1>Super Awesome Gadget</h1>
     <p>Details about the gadget...</p>
+    <script>
+    function navigateToHome() {
+        window.location.href = 'https://example.com/';
+    }
+
+    // Add click event listener to any element with class 'home-link'
+    document.addEventListener('DOMContentLoaded', function() {
+        const homeLinks = document.getElementsByClassName('home-link');
+        for (let link of homeLinks) {
+            link.addEventListener('click', navigateToHome);
+        }
+    });
+    </script>
 </body>
 
 </html>
