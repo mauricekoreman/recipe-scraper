@@ -2,7 +2,6 @@ package server
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
 )
@@ -69,17 +68,19 @@ func (s *Server) recipeUrlHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Println("Fetched recipe...")
-
 	rawJSON, err := findJSONLD(res.Body)
 	if err != nil {
-		respondWithError(w, http.StatusInternalServerError, "something went wrong parsing the data", err)
+		respondWithError(w, http.StatusInternalServerError, "something went wrong scraping the website", err)
 		return
 	}
 
 	recipeJSON, err := getRecipeJSON(rawJSON)
+	if err != nil {
+		respondWithError(w, http.StatusInternalServerError, "Something went wrong filtering out the recipe", err)
+		return
+	}
 
 	// TODO: find a way to get the ingredient counts as seperate values instead of part of the string.
 
-	fmt.Println("Done")
+	respondWithJSON(w, http.StatusOK, recipeJSON)
 }
